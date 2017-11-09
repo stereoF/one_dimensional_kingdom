@@ -1,7 +1,7 @@
 from functools import reduce
 
 
-class OneDimentionalKingdom(object):
+class OneDimensionalKingdom(object):
     bomb_cnt = 1
 
     def __init__(self, kingdoms):
