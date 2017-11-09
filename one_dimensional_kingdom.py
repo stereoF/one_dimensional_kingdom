@@ -20,10 +20,11 @@ class OneDimensionalKingdom(object):
     def place_bombs(self):
         self.__sort_kingdoms()
         reduce(lambda kingdom1, kingdom2: self.__reduce_two_kingdoms(kingdom1, kingdom2), self.kingdoms)
+        return self.bomb_cnt
 
 
-# kingdoms = [[1, 3], [2, 5], [6, 9]]
-# kingdoms = [[1, 14], [5, 11], [3, 27], [31, 32], [2, 8], [15, 19]]
-# one_dimentional_kingdom = OneDimentionalKingdom(kingdoms)
-# one_dimentional_kingdom.place_bombs()
+kingdoms = [[1, 3], [2, 5], [6, 9]]
+kingdoms = [[0, 1], [5, 11], [3, 27], [31, 32], [2, 8], [15, 19]]
+one_dimentional_kingdom = OneDimensionalKingdom(kingdoms)
+print(one_dimentional_kingdom.place_bombs())
 # print(one_dimentional_kingdom.bomb_cnt)
